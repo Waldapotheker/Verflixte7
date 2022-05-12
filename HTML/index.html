@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Verflixte 7</title>
+</head>
+<body>
+
+<h1>Verflixte 7</h1>
+
+<script>
+
+   let max = 6
+   let min = 1
+
+
+
+   function ergebinsWürfel1(){
+       return Math.floor((Math.random() * (max - min)) + min)
+   }
+
+   function ergebnisWürfel2(){
+       return Math.floor((Math.random() * (max - min)) + min)
+   }
+
+   function ergebnisWurf(){
+       return ergebnisWürfel2() + ergebinsWürfel1()
+   }
+
+   console.log("Beide Würfel ergeben " + ergebnisWurf() )
+
+</script>
+
+<button>Würfeln</button>
+
+<input>
+
+</body>
+</html>
